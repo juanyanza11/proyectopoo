@@ -182,38 +182,10 @@ public class Interfaz2 extends javax.swing.JFrame {
         JFrame frame = new IngresarProd();
 
         IngresarProd.getSw().setText(getOp2().getText());
-
-        switch (opcion) {
-            case 1:
                 frame.setVisible(true);
                 setOpcion(1);
+                IngresarProd.setSw(op2);
                 this.setVisible(false);
-                break;
-            case 2:
-                JFrame frame2 = new IngresarProd();
-                frame2.setVisible(true);
-                setOpcion(2);
-                this.setVisible(false);
-                break;
-
-            case 3:
-                JFrame frame3 = new IngresarProd();
-                frame3.setVisible(true);
-                setOpcion(3);
-                this.setVisible(false);
-                break;
-            case 4:
-                JFrame frame4 = new IngresarProd();
-                frame4.setVisible(true);
-                setOpcion(4);
-                this.setVisible(false);
-                break;
-
-            default:
-                JOptionPane.showMessageDialog(null, "Opción Incorrecta");
-                break;
-        }
-
     }//GEN-LAST:event_aceptarActionPerformed
 
     private void cerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarActionPerformed

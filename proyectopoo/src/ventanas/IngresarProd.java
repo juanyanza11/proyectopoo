@@ -24,8 +24,8 @@ public class IngresarProd extends javax.swing.JFrame {
     /**
      * @param aSw the sw to set
      */
-    public static void setSw(javax.swing.JTextField aSw) {
-        sw = aSw;
+    public static void setSw(javax.swing.JTextField sw) {
+        sw = sw;
     }
 
     public void limpiar() {
@@ -232,6 +232,12 @@ public class IngresarProd extends javax.swing.JFrame {
             }
         });
         getContentPane().add(interfaz2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 20, -1, -1));
+
+        sw.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                swActionPerformed(evt);
+            }
+        });
         getContentPane().add(sw, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 150, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Eras Light ITC", 0, 24)); // NOI18N
@@ -415,6 +421,10 @@ public class IngresarProd extends javax.swing.JFrame {
     private void valorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_valorKeyTyped
         // TODO add your handling code here:
     }//GEN-LAST:event_valorKeyTyped
+
+    private void swActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_swActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_swActionPerformed
     public void cargar(Comestible com) {
         this.producto.setText(com.getProdn());
         this.sCant.setText(Integer.toString(com.getCanti()));
